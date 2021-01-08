@@ -1,6 +1,11 @@
 module.exports = {
   plugins: [
-    'tailwindcss',
+    [
+      'tailwindcss',
+      {
+        config: './tailwind.config.js'
+      }
+    ],
     'postcss-flexbugs-fixes',
     [
       'postcss-preset-env',
